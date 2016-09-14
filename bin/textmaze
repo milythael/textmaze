@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+require 'text_maze'
+
+println "Welcome to TextMaze, a game of losing yourself,"
+println "and if you are lucky, finding yourself again."
+
+textmaze = TextMaze.new
+while textmaze.playing?
+  textmaze.play
+end
+
+println "I hope you enjoyed yourself."
+println ""
+println "Until next time, stay out of the jaws of lurking grues."
