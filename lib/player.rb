@@ -6,4 +6,9 @@ class Player
     self.current_location = maze.entrance
     self
   end
+
+  def move_to(entrance_name)
+    new_room = self.current_location.show_exit(entrance_name)
+    self.current_location = new_room if new_room
+  end
 end
