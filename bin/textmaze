@@ -1,15 +1,16 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH.unshift(File.join("#{File.dirname(__FILE__)}", "..", "lib"))
 require 'text_maze'
 
-println "Welcome to TextMaze, a game of losing yourself,"
-println "and if you are lucky, finding yourself again."
+puts "Welcome to TextMaze, a game of losing yourself,\n"
+puts "and if you are lucky, finding yourself again.\n"
 
 textmaze = TextMaze.new
 while textmaze.playing?
-  textmaze.play
+  textmaze.play!
 end
 
-println "I hope you enjoyed yourself."
-println ""
-println "Until next time, stay out of the jaws of lurking grues."
+puts "I hope you enjoyed yourself."
+puts ""
+puts "Until next time, stay out of the jaws of lurking grues."
